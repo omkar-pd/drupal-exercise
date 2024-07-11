@@ -1,0 +1,11 @@
+vendor/
+web/sites/default/files/
+core/
+web/modules/contrib/
+web/themes/contrib/
+.docksal/
+.idea/
+/web/sites/default/settings.local.php
+/.ht.router.php
+/INSTALL.txt
+.DS_Store

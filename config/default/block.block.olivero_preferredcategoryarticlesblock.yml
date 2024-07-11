@@ -1,0 +1,20 @@
+uuid: a212fb9c-777e-4d62-9aeb-a5f02bfb14a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupal_caching
+  theme:
+    - olivero
+id: olivero_preferredcategoryarticlesblock
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: preferred_category_articles_block
+settings:
+  id: preferred_category_articles_block
+  label: 'Preferred Category Articles Block'
+  label_display: visible
+  provider: drupal_caching
+visibility: {  }

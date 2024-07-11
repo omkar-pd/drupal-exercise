@@ -1,0 +1,20 @@
+uuid: 65819d21-cc0b-45d5-9984-16015229e2bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupal_caching
+  theme:
+    - olivero
+id: olivero_recentarticles
+theme: olivero
+region: sidebar
+weight: -7
+provider: null
+plugin: recent_articles
+settings:
+  id: recent_articles
+  label: 'Recent Articles'
+  label_display: visible
+  provider: drupal_caching
+visibility: {  }

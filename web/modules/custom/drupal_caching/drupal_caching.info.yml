@@ -1,0 +1,7 @@
+name: 'Drupal Caching Exercise'
+type: module
+description: 'A module to complete Drupal Caching Exercies.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:node

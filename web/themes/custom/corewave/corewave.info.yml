@@ -1,0 +1,22 @@
+name: corewave
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - corewave/base
+  - corewave/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - corewave/user
+  core/drupal.dropbutton:
+    - corewave/dropbutton
+  core/drupal.dialog:
+    - corewave/dialog
+  file/drupal.file:
+    - corewave/file
+  core/drupal.progress:
+    - corewave/progress
+description: ''
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.3.6'

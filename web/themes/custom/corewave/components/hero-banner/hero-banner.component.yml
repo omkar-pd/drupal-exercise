@@ -1,0 +1,31 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Hero Banner
+description: 'A component for displaying a hero banner.'
+props:
+  type: object
+  requried:
+    - title
+    - cta1href
+
+  properties:
+    heading:
+      title: Heading
+      type: string
+      description: 'The heading of the hero banner.'
+      example: "This is a hero banner heading"
+    subheading:
+      title: Subheading
+      type: string
+      description: 'The subheading of the hero banner.'
+      example: "This is a subheading"
+    cta1:
+      title: CTA 1
+      type: string
+      example: "Learn more"
+    cta1href:
+      title: CTA 1 href
+      type: string
+      format: uri
+      example: "https://www.example.com"
+      

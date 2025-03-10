@@ -68,6 +68,9 @@ class PreferredCategoryArticlesBlock extends BlockBase implements ContainerFacto
     if (empty($preferred_category_tid)) {
       return [
         '#markup' => $this->t('No preferred category set.'),
+        '#cache' => [
+          'contexts' => ['user.field_preferred_category'],
+        ],
       ];
     }
 
@@ -82,7 +85,7 @@ class PreferredCategoryArticlesBlock extends BlockBase implements ContainerFacto
 
     $nids = $query->execute();
     $nodes = Node::loadMultiple($nids);
-
+  
     // Node Titles.
     $titles = [];
     foreach ($nodes as $node) {
@@ -90,11 +93,12 @@ class PreferredCategoryArticlesBlock extends BlockBase implements ContainerFacto
     }
 
     return [
-        '#theme' => 'item_list',
-        '#items' => $titles,
-        '#cache' => [
-          'contexts' => ['user', 'preferred_category'],
-        ],
-      ];      
-  }
+      '#theme' => 'item_list',
+      '#items' => $titles,
+      '#cache' => [
+        'contexts' => ['user.field_preferred_category'],
+      ],
+    ];
+ }
+  
 }
